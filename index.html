@@ -165,14 +165,13 @@ a{text-decoration:none;color:inherit}
 }
 .cz-map{width:100%;max-width:380px;opacity:.8}
 .part-visual .pins-layer{position:absolute;inset:0}
-.pin{
-  position:absolute;width:10px;height:10px;background:var(--orange);border-radius:50%;
+.beep{
+  position:absolute;width:0;height:0;border-radius:50%;
+  border:2px solid rgba(245,146,27,0.6);
+  animation:beepPulse 2s ease-out infinite;
+  transform:translate(-50%,-50%);pointer-events:none;
 }
-.pin::after{
-  content:'';position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--orange);opacity:.3;
-  animation:pinR 2s ease-in-out infinite;
-}
-@keyframes pinR{0%,100%{transform:scale(1);opacity:.3}50%{transform:scale(1.8);opacity:0}}
+@keyframes beepPulse{0%{width:0;height:0;opacity:.8}100%{width:30px;height:30px;opacity:0}}
 
 /* ══════════════════════════════════════════
    LOCATION — WHY CENTRAL EUROPE
@@ -459,19 +458,19 @@ a{text-decoration:none;color:inherit}
         <h2>A Strategic Partnership <span class="orange">Built on Trust</span></h2>
         <p>Kerouš is the exclusive Zoomlion distributor for the Czech Republic. Over years of partnership, hundreds of machines have been delivered across the region. The new CR PARK facility marks the next chapter — scaling this partnership to a European level.</p>
       </div>
-      <div class="part-visual rv rv-d2">
-        <!-- Czech Republic silhouette SVG -->
-        <svg class="cz-map" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
-          <path d="M80 120 Q90 100 130 90 Q160 80 190 75 Q220 70 250 65 Q280 70 310 80 Q340 90 370 100 Q390 95 420 100 Q440 110 445 130 Q440 150 430 160 Q410 175 390 180 Q370 190 350 200 Q330 210 300 215 Q270 220 240 210 Q210 200 180 195 Q150 190 130 180 Q110 170 95 155 Q80 140 80 120Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
-        </svg>
-        <div class="pins-layer">
-          <div class="pin" style="top:42%;left:48%"></div>
-          <div class="pin" style="top:50%;left:40%;animation-delay:.3s"></div>
-          <div class="pin" style="top:46%;left:55%;animation-delay:.6s"></div>
-          <div class="pin" style="top:55%;left:52%;animation-delay:.9s"></div>
-          <div class="pin" style="top:48%;left:35%;animation-delay:1.2s"></div>
-          <div class="pin" style="top:53%;left:45%;animation-delay:1.5s"></div>
-        </div>
+      <div class="part-visual rv rv-d2" style="background:url('cz-map.png') center/contain no-repeat;padding:0;min-height:360px">
+        <div class="beep" style="top:18%;left:40%"></div>
+        <div class="beep" style="top:22%;left:52%;animation-delay:.2s"></div>
+        <div class="beep" style="top:28%;left:62%;animation-delay:.4s"></div>
+        <div class="beep" style="top:35%;left:45%;animation-delay:.6s"></div>
+        <div class="beep" style="top:38%;left:55%;animation-delay:.8s"></div>
+        <div class="beep" style="top:42%;left:35%;animation-delay:1s"></div>
+        <div class="beep" style="top:48%;left:50%;animation-delay:1.2s"></div>
+        <div class="beep" style="top:52%;left:42%;animation-delay:1.4s"></div>
+        <div class="beep" style="top:55%;left:58%;animation-delay:1.6s"></div>
+        <div class="beep" style="top:60%;left:48%;animation-delay:1.8s"></div>
+        <div class="beep" style="top:45%;left:68%;animation-delay:2s"></div>
+        <div class="beep" style="top:32%;left:30%;animation-delay:2.2s"></div>
       </div>
     </div>
   </div>
