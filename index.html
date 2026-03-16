@@ -235,7 +235,7 @@ a{text-decoration:none;color:inherit}
 /* ══════════════════════════════════════════
    HERITAGE
    ══════════════════════════════════════════ */
-.heritage-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:start}
+.heritage-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 
 /* ══════════════════════════════════════════
    SITE VISION & ZONES
@@ -554,32 +554,34 @@ a{text-decoration:none;color:inherit}
 <div class="divider"></div>
 
 <!-- ════════ HERITAGE ════════ -->
-<section class="section" id="heritage" style="background:var(--bg2)">
+<section class="section" id="heritage">
   <div class="container">
-    <h2 class="rv" style="text-align:center;font-size:clamp(2rem,4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:48px">From 1675 to Today — <span class="green">Ready to Operate</span></h2>
+    <h2 class="rv" style="text-align:center;font-size:clamp(2rem,4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:48px">Existing Infrastructure — <span class="green">Ready Now</span></h2>
     <div class="heritage-grid rv">
       <div>
-        <img src="aerial-current.png" alt="Aerial view of CR Park" style="width:100%;border-radius:16px;border:1px solid rgba(255,255,255,0.06);aspect-ratio:1/1;object-fit:cover">
+        <img src="aerial-current.png" alt="Aerial view of CR Park" style="width:100%;border-radius:var(--r-lg);border:1px solid var(--border);object-fit:cover">
       </div>
       <div>
-        <div style="border:2px dashed var(--orange);border-radius:12px;padding:24px;margin-bottom:32px">
-          <p style="color:var(--text2);font-size:1rem;line-height:1.7">The <span class="green" style="font-weight:700">CR PARK</span> site has a 350-year industrial heritage as a paper mill. Today, the first phase of infrastructure is complete and immediately operational. The total site spans 220,000 m² with 8,600 m² of usable buildings and 46,000 m² of paved handling area available immediately.</p>
-        </div>
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-          <span style="width:28px;height:28px;min-width:28px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px">✓</span>
-          <span style="font-weight:700;font-size:.95rem">Warehouse & Production Space · 6,500 m²</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-          <span style="width:28px;height:28px;min-width:28px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px">✓</span>
-          <span style="font-weight:700;font-size:.95rem">Admin & Facilities · 800 m²</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
-          <span style="width:28px;height:28px;min-width:28px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px">✓</span>
-          <span style="font-weight:700;font-size:.95rem">Accommodation / Office (Castle) · 1,300 m²</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:16px">
-          <span style="width:28px;height:28px;min-width:28px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px">✓</span>
-          <span style="font-weight:700;font-size:.95rem">Handling Area · 26,000 + 20,000 m²</span>
+        <div class="hero-badge" style="margin-bottom:20px">Phase 1 · Operational</div>
+        <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:16px;line-height:1.4">8,600 m² of usable buildings and 46,000 m² of paved handling area — available immediately.</h3>
+        <p style="color:var(--text2);font-size:1rem;line-height:1.7;margin-bottom:28px">The CR PARK site has a 350-year industrial heritage. Today, the first phase of infrastructure is complete and immediately operational.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-md);padding:20px">
+            <div style="font-size:1.3rem;font-weight:800;color:var(--green);margin-bottom:4px">6,500 m²</div>
+            <div style="font-size:.82rem;color:var(--text2)">Warehouse & Production</div>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-md);padding:20px">
+            <div style="font-size:1.3rem;font-weight:800;color:var(--green);margin-bottom:4px">800 m²</div>
+            <div style="font-size:.82rem;color:var(--text2)">Admin & Facilities</div>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-md);padding:20px">
+            <div style="font-size:1.3rem;font-weight:800;color:var(--green);margin-bottom:4px">1,300 m²</div>
+            <div style="font-size:.82rem;color:var(--text2)">Office (Castle)</div>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-md);padding:20px">
+            <div style="font-size:1.3rem;font-weight:800;color:var(--green);margin-bottom:4px">46,000 m²</div>
+            <div style="font-size:.82rem;color:var(--text2)">Handling Area</div>
+          </div>
         </div>
       </div>
     </div>
