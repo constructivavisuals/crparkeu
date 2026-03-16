@@ -185,17 +185,16 @@ a{text-decoration:none;color:inherit}
 .loc-head h2{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:900;letter-spacing:-.03em;margin-bottom:14px}
 .loc-head p{color:var(--text2);font-size:1.05rem}
 
-.travel-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:48px}
-.t-card{
-  background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-md);
-  padding:28px 20px;text-align:center;transition:all .4s var(--ease);position:relative;overflow:hidden;
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-bottom:48px}
+.loc-cards{display:flex;flex-direction:column;gap:12px}
+.loc-card{
+  display:flex;align-items:center;gap:20px;padding:16px 24px;
+  background:var(--bg-card);border:1px solid var(--border);border-radius:12px;
+  transition:all .4s var(--ease);
 }
-.t-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--green),var(--yellow));opacity:0;transition:.4s}
-.t-card:hover{border-color:var(--border-g);transform:translateY(-3px);background:var(--bg-card-h)}
-.t-card:hover::after{opacity:1}
-.t-val{font-size:2.4rem;font-weight:900;color:var(--green);line-height:1}
-.t-val span{font-size:1.1rem;font-weight:500}
-.t-dest{margin-top:6px;font-size:.9rem;color:var(--text2);font-weight:500}
+.loc-card:hover{border-color:var(--border-g);transform:translateX(4px);background:var(--bg-card-h)}
+.loc-time{font-size:1.6rem;font-weight:900;color:var(--green);min-width:50px}
+.loc-dest{font-size:1rem;font-weight:600;color:var(--text)}
 
 .reach{
   background:linear-gradient(135deg,var(--bg-card),var(--bg2));
@@ -394,7 +393,7 @@ a{text-decoration:none;color:inherit}
   .burger{display:block}
   .reach-map-grid{grid-template-columns:1fr}
   .part-grid,.fp-grid{grid-template-columns:1fr;gap:40px}
-  .travel-grid{grid-template-columns:repeat(2,1fr)}
+  .loc-grid{grid-template-columns:1fr}
   .stats-viz-grid{grid-template-columns:1fr}
   .site-stats{grid-template-columns:1fr}
   .zones{grid-template-columns:1fr}
@@ -408,7 +407,6 @@ a{text-decoration:none;color:inherit}
   .footer-in{flex-direction:column;gap:16px;text-align:center}
 }
 @media(max-width:600px){
-  .travel-grid{grid-template-columns:1fr}
   .hero-stats{flex-direction:column;gap:20px}
 }
 </style>
@@ -509,30 +507,33 @@ a{text-decoration:none;color:inherit}
       <p>Pelhřimov sits at the geographic heart of Europe, within a single working day's reach of all major markets.</p>
     </div>
 
-    <div class="travel-grid">
-      <div class="t-card rv">
-        <div class="t-val">4<span>hours</span></div>
-        <div class="t-dest">Germany</div>
+    <div class="loc-grid rv">
+      <div>
+        <img src="map-connections.png" alt="European connections map" style="width:100%;border-radius:16px;border:1px solid rgba(255,255,255,0.06)">
       </div>
-      <div class="t-card rv rv-d1">
-        <div class="t-val">2<span>hours</span></div>
-        <div class="t-dest">Vienna</div>
-      </div>
-      <div class="t-card rv rv-d2">
-        <div class="t-val">1<span>hour</span></div>
-        <div class="t-dest">Prague</div>
-      </div>
-      <div class="t-card rv rv-d3">
-        <div class="t-val">6<span>hours</span></div>
-        <div class="t-dest">Warsaw</div>
-      </div>
-      <div class="t-card rv rv-d4">
-        <div class="t-val">5<span>hours</span></div>
-        <div class="t-dest">Budapest</div>
+      <div class="loc-cards">
+        <div class="loc-card">
+          <span class="loc-time">4h</span>
+          <span class="loc-dest">Germany</span>
+        </div>
+        <div class="loc-card">
+          <span class="loc-time">2h</span>
+          <span class="loc-dest">Vienna</span>
+        </div>
+        <div class="loc-card">
+          <span class="loc-time">1h</span>
+          <span class="loc-dest">Prague</span>
+        </div>
+        <div class="loc-card">
+          <span class="loc-time">6h</span>
+          <span class="loc-dest">Warsaw</span>
+        </div>
+        <div class="loc-card">
+          <span class="loc-time">5h</span>
+          <span class="loc-dest">Budapest</span>
+        </div>
       </div>
     </div>
-
-    <img src="map-connections.png" alt="European connections map" class="rv" style="display:block;width:100%;max-width:600px;margin:48px auto;border-radius:16px;border:1px solid rgba(255,255,255,0.06)">
 
     <div class="reach rv">
       <div class="reach-num">15+</div>
