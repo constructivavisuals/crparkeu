@@ -147,6 +147,11 @@ a{text-decoration:none;color:inherit}
 .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
 
 /* ══════════════════════════════════════════
+   REACH MAP
+   ══════════════════════════════════════════ */
+.reach-map-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:48px;align-items:center}
+
+/* ══════════════════════════════════════════
    PARTNERSHIP
    ══════════════════════════════════════════ */
 .partnership{background:var(--bg2)}
@@ -387,6 +392,7 @@ a{text-decoration:none;color:inherit}
 @media(max-width:900px){
   .nav-links{display:none}
   .burger{display:block}
+  .reach-map-grid{grid-template-columns:1fr}
   .part-grid,.fp-grid{grid-template-columns:1fr;gap:40px}
   .travel-grid{grid-template-columns:repeat(2,1fr)}
   .stats-viz-grid{grid-template-columns:1fr}
@@ -453,6 +459,27 @@ a{text-decoration:none;color:inherit}
   <div class="scroll-ind">
     <div class="scroll-line"></div>
     Scroll
+  </div>
+</section>
+
+<!-- ════════ REACH MAP ════════ -->
+<section class="reach-map-section section" id="reach-map" style="background:var(--bg2)">
+  <div class="container">
+    <div class="reach-map-grid rv">
+      <div>
+        <h2 style="font-size:clamp(2.5rem,5vw,3.5rem);font-weight:900;letter-spacing:-.03em;line-height:1.1;margin-bottom:28px">15+ Countries<br>Within Reach</h2>
+        <div style="border:2px dashed var(--orange);border-radius:12px;padding:24px;margin-bottom:24px">
+          <p style="color:var(--text2);font-size:1rem;line-height:1.7">Located in the geographic heart of Europe with direct access to the D1 motorway, <span class="green" style="font-weight:700">CR PARK</span> provides fast connections to Germany, Austria and balanced access to Western, Central and South-Eastern European markets.</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px">
+          <img src="zoomlion.png" alt="Zoomlion" style="height:24px">
+          <img src="kerous.png" alt="Kerouš" style="height:22px">
+        </div>
+      </div>
+      <div>
+        <img src="reach-map.png" alt="European reach map" style="width:100%;border-radius:16px">
+      </div>
+    </div>
   </div>
 </section>
 
