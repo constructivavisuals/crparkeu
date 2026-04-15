@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CR PARK — European ZOOMLION Hub</title>
+<title>CR PARK — European Industrial Hub</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,15 +16,15 @@
   --bg2: #0b1018;
   --bg-card: #0f1620;
   --bg-card-h: #141d2c;
-  --green: #b4d335;
-  --green-dim: #8aaa1a;
+  --green: #f5921b;
+  --green-dim: #d17a12;
   --orange: #f5921b;
   --yellow: #f5c518;
   --text: #e8ecf2;
   --text2: #7d8a9e;
   --text3: #3e4d63;
   --border: rgba(255,255,255,0.06);
-  --border-g: rgba(180,211,53,0.18);
+  --border-g: rgba(245,146,27,0.18);
   --r-sm: 10px;
   --r-md: 16px;
   --r-lg: 24px;
@@ -64,7 +64,7 @@ a{text-decoration:none;color:inherit}
   padding:10px 24px;border-radius:100px;transition:all .3s var(--ease);
   display:inline-flex;align-items:center;gap:6px;
 }
-.nav-cta:hover{box-shadow:0 0 28px rgba(180,211,53,.35);transform:translateY(-1px)}
+.nav-cta:hover{box-shadow:0 0 28px rgba(245,146,27,.35);transform:translateY(-1px)}
 .nav-cta svg{width:14px;height:14px}
 
 .burger{display:none;background:none;border:none;color:var(--text);cursor:pointer;padding:4px}
@@ -77,7 +77,7 @@ a{text-decoration:none;color:inherit}
 .hero::before{
   content:'';position:absolute;inset:0;
   background:
-    radial-gradient(ellipse 70% 50% at 60% 35%,rgba(180,211,53,.05) 0%,transparent 70%),
+    radial-gradient(ellipse 70% 50% at 60% 35%,rgba(245,146,27,.05) 0%,transparent 70%),
     radial-gradient(ellipse 50% 40% at 25% 75%,rgba(245,146,27,.03) 0%,transparent 60%);
   pointer-events:none;
 }
@@ -95,7 +95,7 @@ a{text-decoration:none;color:inherit}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
   font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--green);background:rgba(180,211,53,.07);border:1px solid rgba(180,211,53,.14);
+  color:var(--green);background:rgba(245,146,27,.07);border:1px solid rgba(245,146,27,.14);
   padding:7px 16px;border-radius:100px;margin-bottom:32px;
   animation:fadeUp .8s var(--ease) both;
 }
@@ -116,10 +116,10 @@ a{text-decoration:none;color:inherit}
   display:inline-flex;align-items:center;gap:8px;
   background:var(--green);color:var(--bg);font-weight:700;font-size:1rem;
   padding:14px 36px;border-radius:100px;transition:all .3s var(--ease);
-  box-shadow:0 0 40px rgba(180,211,53,.18);
+  box-shadow:0 0 40px rgba(245,146,27,.18);
   animation:fadeUp .8s var(--ease) .36s both;
 }
-.hero-cta:hover{box-shadow:0 0 56px rgba(180,211,53,.35);transform:translateY(-2px)}
+.hero-cta:hover{box-shadow:0 0 56px rgba(245,146,27,.35);transform:translateY(-2px)}
 .hero-cta svg{width:16px;height:16px}
 .hero-stats{
   display:flex;justify-content:center;gap:clamp(32px,6vw,72px);margin-top:56px;
@@ -222,7 +222,7 @@ a{text-decoration:none;color:inherit}
   background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-sm);
   font-size:.82rem;color:var(--text2);transition:all .3s;
 }
-.chip.hl{border-color:var(--border-g);color:var(--green);background:rgba(180,211,53,.04)}
+.chip.hl{border-color:var(--border-g);color:var(--green);background:rgba(245,146,27,.04)}
 .chip-dot{width:7px;height:7px;border-radius:50%;background:var(--text3);flex-shrink:0}
 .chip.hl .chip-dot{background:var(--green);box-shadow:0 0 8px var(--green)}
 
@@ -253,7 +253,7 @@ a{text-decoration:none;color:inherit}
 }
 .s-stat:hover{border-color:var(--border-g);transform:translateY(-2px)}
 .s-stat-icon{
-  width:44px;height:44px;border-radius:12px;background:rgba(180,211,53,.07);
+  width:44px;height:44px;border-radius:12px;background:rgba(245,146,27,.07);
   display:flex;align-items:center;justify-content:center;margin:0 auto 14px;
 }
 .s-stat-icon svg{width:22px;height:22px;stroke:var(--green);fill:none;stroke-width:1.8}
@@ -276,7 +276,7 @@ a{text-decoration:none;color:inherit}
   padding:4px 12px;border-radius:100px;font-weight:600;
 }
 .z-a .z-label{color:var(--orange);background:rgba(245,146,27,.08);border:1px solid rgba(245,146,27,.18)}
-.z-b .z-label{color:var(--green);background:rgba(180,211,53,.08);border:1px solid rgba(180,211,53,.18)}
+.z-b .z-label{color:var(--green);background:rgba(245,146,27,.08);border:1px solid rgba(245,146,27,.18)}
 .z-c .z-label{color:var(--yellow);background:rgba(245,197,24,.08);border:1px solid rgba(245,197,24,.18)}
 .z-d .z-label{color:#6fb0f7;background:rgba(111,176,247,.08);border:1px solid rgba(111,176,247,.18)}
 .z-area{font-family:var(--mono);font-size:.78rem;color:var(--text)}
@@ -304,7 +304,7 @@ a{text-decoration:none;color:inherit}
   background:var(--bg-card);transition:all .4s var(--ease);
 }
 .step-circle.or-border{border-color:var(--orange)}
-.step-circle:hover{transform:scale(1.08);box-shadow:0 0 24px rgba(180,211,53,.2)}
+.step-circle:hover{transform:scale(1.08);box-shadow:0 0 24px rgba(245,146,27,.2)}
 .step-circle.or-border:hover{box-shadow:0 0 24px rgba(245,146,27,.2)}
 .step-circle svg{width:34px;height:34px;stroke:var(--green);fill:none;stroke-width:1.6}
 .step-circle svg.or-ico{stroke:var(--orange)}
@@ -338,7 +338,7 @@ a{text-decoration:none;color:inherit}
   width:44px;height:44px;border-radius:12px;
   display:flex;align-items:center;justify-content:center;margin-bottom:14px;
 }
-.sec-icon.gr{background:rgba(180,211,53,.08)}
+.sec-icon.gr{background:rgba(245,146,27,.08)}
 .sec-icon.or{background:rgba(245,146,27,.08)}
 .sec-icon svg{width:22px;height:22px}
 .sec-card h3{font-size:1.05rem;font-weight:700;margin-bottom:8px}
@@ -353,7 +353,7 @@ a{text-decoration:none;color:inherit}
 }
 .cta-section::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(180,211,53,.04),transparent);
+  background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(245,146,27,.04),transparent);
   pointer-events:none;
 }
 .cta-box{
@@ -367,9 +367,9 @@ a{text-decoration:none;color:inherit}
   display:inline-flex;align-items:center;gap:8px;
   background:var(--green);color:var(--bg);font-weight:700;font-size:1rem;
   padding:16px 40px;border-radius:100px;transition:all .3s var(--ease);
-  box-shadow:0 0 48px rgba(180,211,53,.2);
+  box-shadow:0 0 48px rgba(245,146,27,.2);
 }
-.cta-btn:hover{box-shadow:0 0 64px rgba(180,211,53,.4);transform:translateY(-2px)}
+.cta-btn:hover{box-shadow:0 0 64px rgba(245,146,27,.4);transform:translateY(-2px)}
 .cta-btn svg{width:16px;height:16px}
 .cta-contacts{
   display:flex;justify-content:center;gap:40px;margin-top:40px;
@@ -430,7 +430,7 @@ a{text-decoration:none;color:inherit}
 <!-- ════════ NAVIGATION ════════ -->
 <nav class="nav" id="nav">
   <div class="nav-in">
-    <a href="#" class="nav-logo"><img src="zoomlion.png" alt="Zoomlion" style="height:26px"> <span style="color:var(--text3);font-weight:400;font-size:.9rem">/</span> <img src="kerous.png" alt="Kerouš" style="height:23px"></a>
+    <a href="#" class="nav-logo"><img src="kerous.png" alt="Kerouš" style="height:26px"></a>
     <ul class="nav-links">
       <li><a href="#partnership">Partnership</a></li>
       <li><a href="#location">Location</a></li>
@@ -449,9 +449,9 @@ a{text-decoration:none;color:inherit}
   <div class="hero-grid"></div>
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge">European Zoomlion Hub</div>
+      <div class="hero-badge">European Industrial Hub</div>
       <h1>Your Gateway to<br><span class="grad">Central Europe</span></h1>
-      <p class="hero-sub">CR PARK is a planned industrial, logistics, and service hub in the Czech Republic — strategically positioned at the heart of Europe for Zoomlion's continental operations.</p>
+      <p class="hero-sub">CR PARK is a planned industrial, logistics, and service hub in the Czech Republic — strategically positioned at the heart of Europe for continental operations.</p>
       <a href="#contact" class="hero-cta">Explore the Vision <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
       <div class="hero-stats">
         <div>
@@ -501,12 +501,10 @@ a{text-decoration:none;color:inherit}
       </div>
       <div class="part-text rv rv-d2">
         <div class="part-logos">
-          <img src="zoomlion.png" alt="Zoomlion" style="height:36px">
-          <span class="logo-div"></span>
-          <img src="kerous.png" alt="Kerouš" style="height:29px">
+          <img src="kerous.png" alt="Kerouš" style="height:36px">
         </div>
         <h2>A Strategic Partnership <span class="orange">Built on Trust</span></h2>
-        <p>Kerouš is the long term Zoomlion distributor for the Czech Republic. Over years of partnership, hundreds of machines have been delivered across the region. The new CR PARK facility marks the next chapter — scaling this partnership to a European level.</p>
+        <p>Kerouš is a leading distributor of construction machinery in the Czech Republic. Over years of operation, hundreds of machines have been delivered across the region. The new CR PARK facility marks the next chapter — scaling operations to a European level.</p>
       </div>
     </div>
   </div>
@@ -604,7 +602,7 @@ a{text-decoration:none;color:inherit}
   <div class="container">
     <div class="vis-head rv">
       <h2>Total <span class="green">Site Vision</span></h2>
-      <p>A fully fenced and secured industrial site with direct road access. Purpose-built zones for every stage of Zoomlion's European operations.</p>
+      <p>A fully fenced and secured industrial site with direct road access. Purpose-built zones for every stage of European operations.</p>
     </div>
 
     <div class="stats-viz-grid">
@@ -697,7 +695,7 @@ a{text-decoration:none;color:inherit}
   <div class="container">
     <div class="proc-head rv">
       <h2>From Factory <span class="green">to Customer</span></h2>
-      <p>A seamless supply chain connecting Zoomlion's manufacturing to European dealers and end customers.</p>
+      <p>A seamless supply chain connecting manufacturing to European dealers and end customers.</p>
     </div>
 
     <div class="steps rv">
@@ -771,8 +769,8 @@ a{text-decoration:none;color:inherit}
   <div class="container">
     <div class="rv" style="text-align:center">
       <div class="hero-badge" style="margin-bottom:20px">European Network</div>
-      <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:800;letter-spacing:-.02em;max-width:700px;margin:0 auto 16px">Zoomlion's European Footprint — <span class="green">CR PARK as the Next Step</span></h2>
-      <p style="color:var(--text2);font-size:1.02rem;max-width:600px;margin:0 auto 48px"><span class="green" style="font-weight:700">ZOOMLION</span> already builds machines in Europe. <span class="green" style="font-weight:700">CR PARK</span> can help develop the European market.</p>
+      <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:800;letter-spacing:-.02em;max-width:700px;margin:0 auto 16px">European Footprint — <span class="green">CR PARK as the Next Step</span></h2>
+      <p style="color:var(--text2);font-size:1.02rem;max-width:600px;margin:0 auto 48px"><span class="green" style="font-weight:700">CR PARK</span> can help develop the European market for construction machinery.</p>
       <img src="ambition.png" alt="European footprint" style="width:100%;max-width:900px;margin:0 auto;display:block;border-radius:var(--r-lg);border:1px solid var(--border)">
       <div class="fp-chips" style="grid-template-columns:repeat(3,1fr);gap:12px;max-width:700px;margin:32px auto 0;display:grid">
         <div class="chip hl"><span class="chip-dot"></span>CR PARK · Central European Hub</div>
@@ -836,12 +834,10 @@ a{text-decoration:none;color:inherit}
   <div class="container">
     <div class="cta-box rv">
       <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:28px">
-        <img src="zoomlion.png" alt="Zoomlion" style="height:32px">
-        <span style="width:1px;height:24px;background:var(--text3);transform:rotate(15deg);display:inline-block"></span>
-        <img src="kerous.png" alt="Kerouš" style="height:29px">
+        <img src="kerous.png" alt="Kerouš" style="height:36px">
       </div>
       <h2>Let's <span class="green">Build</span> the <span class="orange">Future</span> Together</h2>
-      <p>CR PARK is ready to become Zoomlion's strategic European hub — combining prime location, full-scale capacity, and a proven partnership.</p>
+      <p>CR PARK is ready to become a strategic European hub — combining prime location, full-scale capacity, and proven expertise.</p>
       <a href="mailto:info@crpark.cz" class="cta-btn">Get in Touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
       <div class="cta-contacts">
         <a href="https://www.crpark.cz"><svg viewBox="0 0 24 24" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg> www.crpark.cz</a>
@@ -856,9 +852,7 @@ a{text-decoration:none;color:inherit}
   <div class="container">
     <div class="footer-in">
       <div class="footer-logos">
-        <img src="zoomlion.png" alt="Zoomlion" style="height:22px">
-        <span class="footer-sep"></span>
-        <img src="kerous.png" alt="Kerouš" style="height:20px">
+        <img src="kerous.png" alt="Kerouš" style="height:24px">
       </div>
       <div class="footer-copy">&copy; 2026 CR PARK. All rights reserved.</div>
     </div>
